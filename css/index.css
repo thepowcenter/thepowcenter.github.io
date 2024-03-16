@@ -86,10 +86,10 @@
 }
 #about-subheader {
     margin-top: -20px;
-    color: var(--secondary);
+    color: var(--maintext);
 }
 #about-header {
-    margin-top: -30px;
+    margin-top: -20px;
     color: var(--orange);
 }
 #about-text {
@@ -115,8 +115,7 @@
     display: flex;
 }
 #books-header {
-    margin-top: -20px;
-    font-size: 70px;
+    margin-top: -30px;
     line-height: 70px;
 }
 #books-subheader {
@@ -129,7 +128,7 @@
     border-right: 10px solid var(--orange);
 }
 #books-text {
-    margin-top: -40px;
+    margin-top: -20px;
     width: 650px;
     height: 450px;
     padding-left: 50px;
@@ -165,7 +164,7 @@
     text-decoration: none;
     border-bottom: 2px solid var(--link);
     margin-top: 25px;
-    margin-left: -10px;
+    font-size: 18px;
     transition: 0.2s;
 }
 
@@ -174,6 +173,76 @@
 }
 
 #sample {
+    margin-top: -25px;
     height: 600px;
-    background: whitesmoke;
+    background: var(--darkblue);
+}
+
+
+#youtube {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#yt-header {
+    color: var(--text);
+}
+#yt-videos {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#yt-vid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#yt-thumbnail {
+    width: 350px;
+    transition: 0.2s;
+}
+#yt-thumbnail:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#yt-vid-title {
+    font-weight: 600;
+    font-size: 20px;
+}
+#yt-vid-subtitle {
+    color: var(--maintext);
+    font-size: 18px;
+    margin-top: -20px;
+    font-weight: 600;
+}
+
+#yt-channel {
+    background: var(--orange);
+    padding-left: 50px;
+    margin-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+    height: 60px;
+    display: flex;
+    justify-content: ceter;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    margin-top: 50px;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+#yt-channel:hover {
+    background: var(--secondary);
+    transform: scale(1.1);
 }

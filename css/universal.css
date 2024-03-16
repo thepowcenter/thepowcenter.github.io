@@ -8,7 +8,9 @@
     --orange: rgb(255,115,39);
     --darkblue: #2b324e;
     --text: rgb(66, 66, 66);
-    --link: rgb(165, 194, 255);
+    --link: rgb(188, 206, 255);
+    --yt: #ff4141;
+    --maintext: #dbb688;
 }
 html {
     scroll-behavior: smooth;

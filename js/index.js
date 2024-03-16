@@ -1,3 +1,4 @@
+/*
 Email.send({
     SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
     To : 'rlin656565@gmail.com',
@@ -7,3 +8,4 @@ Email.send({
 }).then(
   message => alert("h")
 );
+*/
