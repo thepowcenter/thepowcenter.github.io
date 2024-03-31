@@ -9,3 +9,15 @@ Email.send({
   message => alert("h")
 );
 */
+var offset ;
+if (window.screen.width >= 1024) {
+    offset = 125;
+}
+else {
+    offset=300;
+}
+
+if (localStorage.getItem("toAbout") == "going") {
+  scrollTo({top: document.getElementById("about").offsetTop - offset, behavior: "smooth"});
+  localStorage.removeItem("toAbout");
+}

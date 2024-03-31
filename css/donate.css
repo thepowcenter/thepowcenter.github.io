@@ -1,0 +1,59 @@
+#landing {
+    width: 100%;
+    background: var(--darkblue);
+    height: 800px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#landing-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    margin-top: -50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.person {
+    width: 250px;
+}
+#person-left {
+    width: 230px;
+}
+#landing-header {
+    color: var(--main);
+}
+#landing-text {
+    margin-top: -20px;
+    color: whitesmoke;
+    text-align: center;
+}
+#landing-donate {
+    background: var(--orange);
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+    transition: 0.2s;
+}
+#landing-donate:hover {
+    background: var(--secondary);
+    transform: scale(1.1);
+}
+
+#landing-subheader {
+    color: var(--link);
+}
