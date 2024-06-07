@@ -19,10 +19,15 @@ body {
     margin: 0;
     padding: 0;
 }
+body.modal-open {
+    overflow: hidden;
+    position: fixed;
+}
 html, body {
     font-family: "Poppins";
     background-color: white;
     overflow-x: hidden;
+	
 }
 
 
@@ -40,11 +45,19 @@ html, body {
     height: 70px;
     position: absolute;
     left: 50px;
+    top: 5px;
     transition: 0.2s;
+    z-index: 101;
 }
 #menu-img:hover {
     transform: scale(1.1);
     cursor: pointer;
+}
+#menu-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 .menu-button {
@@ -85,45 +98,312 @@ html, body {
     line-height: 35px;
 }
 
+#sample-finish, #sample-finish2 {
+    margin-left: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#loading1, #loading2 {
+    color: transparent;
+    pointer-events: none;
+    position: relative;
+    z-index: 1;
+    width: 25px;
+    height: 25px;
+    margin-left: 25px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: loading 0.2s infinite;
+}
+#sample-finish2 {
+    justify-content: left;
+    margin-left: 0px;
+}
+#loading2 {
+    margin-top: 15px;
+}
+
+@keyframes loading {
+    0%   {transform: rotate(0deg);}
+    50%  {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
+
 #contact {
-    border-radius: 15px;
-    background: var(--darkblue);
-    width: 100%;
+    border-top: 5px solid white;
+    border-top-left-radius: 145px;
+    border-top-right-radius: 145px;
+    width: 100% - 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
     padding-top: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 35px;
+    background: var(--lightmain);
 }
 #contact-content {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 50px;
 }
 
-#contact-img {
-    width: 250px;
-}
 #contact-left {
-    text-align: left;
-    width: 300px;
+    width: 450px;
+    margin-right: 25px;
+    background: white;
+    border-radius: 1000px;
+    border: 5px solid var(--orange);
+    width: 325px;
+    height: 325px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
+#contact-img {
+    width: 200px;
+}
+#contact-text2 {
+    color: var(--text);
+    font-size: 12px;
+    width: 250px;
+    text-align: center;
+    line-height: 25px;
+}
+
 #contact-right {
-    padding-left: 50px;
-    padding-right: 50px;
+    border: 5px solid var(--orange);
+    padding-left: 150px;
+    padding-right: 100px;
     padding-top: 10px;
     padding-bottom: 30px;
     background: white;
-    border-radius: 15px;
+    border-radius: 1000px;
+    border-top-right-radius: 1000px;
+    border-bottom-right-radius: 1000px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
+#contact-subheader2 {
+    color: var(--darkblue);
+}
+#contact-text {
+    margin-top: -20px;
+    color: var(--text);
+}
+
 #fname, #lname, #cemail {
     font-size: 15px;
-    width: 300px;
+    width: 233px;
     background: white;
     color: var(--darkblue);
-    border: 4px solid var(--darkblue);
+    border: 4px solid rgb(236, 236, 236);
     font-family: "Poppins";
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
     outline: none;
+    transition: 0.15s;
+}
+#cemail {
+    width: 500px;
+}
+
+#fname:focus, #lname:focus, #cemail:focus {
+    border: 4px solid var(--orange);
+}
+
+#submit-contact {
+    background: var(--orange);
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 17px;
+    border: none;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-family: "Poppins";
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+    transition: 0.2s;
+}
+#submit-contact:hover {
+    background: var(--secondary);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    
+    #menu {
+        background: var(--orange);
+        height: 140px;
+        width: 100vw;
+        display: block;
+        transition: 0.3s;
+        overflow: hidden;
+        padding-top: 50px;
+    }
+
+	#menu-img {
+		width: 150px;
+        margin-top: 25px;
+        height: auto;
+		margin-right: 40px;
+	}
+    #menubutton {
+		background: transparent;
+        color: white;
+		font-size: 100px;
+        font-family: "Poppins";
+		transform: rotate(90deg);
+		display:block;
+		font-weight: 700;
+        filter: opacity(100%);
+        margin-left: 80vw;
+        width: 150px;
+        margin-top: -25px;
+        height: 150px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+		transition: 0.2s;
+    }
+
+    #menu-tabs {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin-left: 0px;		
+		margin-top: 70%;
+    }
+	.menu-button {
+		font-size: 70px;
+		bottom: 0;
+		width: 80%;
+        color: white;
+		text-align: right;
+		border-radius: 20px;
+		margin-top: 0;
+		margin-bottom: 0;
+		text-transform: uppercase;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-right: 50px;
+		letter-spacing: 0px;
+	}
+	.menu-button:hover {
+		background: white;
+		text-decoration: none;
+        transform: none;
+		color: var(--darkblue);
+	}
+
+    .section-subheader {
+        font-size: 50px;
+    }
+    .section-header {
+        font-size: 75px;
+    }
+    .section-text {
+        font-size: 35px;
+        line-height: 60px;
+    }
+
+    #sample-finish, #sample-finish2 {
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+    #loading1, #loading2 {
+        font-size: 35px;
+    }
+
+
+    #contact {
+        padding-left: 40px;
+        padding-right: 0px;
+    }
+
+    #contact-content {
+        flex-direction: column;
+        width: 90%;
+    }
+    #contact-left {
+        margin: 0;
+        width: 100%;
+        height: 900px;
+        border-width: 10px;
+        border-bottom-left-radius: 170px;
+        border-bottom-right-radius: 170px;
+    }
+    #contact-img {
+        width: 500px;
+        height: auto;
+    }
+    #contact-text2 {
+        width: 500px;
+        font-size: 35px;
+        line-height: 55px;
+    }
+    #contact-right {
+        position: static;
+        margin-top: 50px;
+        border: 10px solid var(--orange);
+        text-align: center;
+        padding-top: 150px;
+        padding-bottom: 250px;
+        border-radius: 75px;
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 100%-100px;
+    }
+    #contact-subheader2 {
+        font-size: 70px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+    }
+    #contact-text {
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+    #fname, #lname, #cemail {
+        width: 550px;
+        height: 100px;
+        border-width: 10px;
+        font-size: 35px;
+        padding-left: 35px;
+        margin-bottom: 20px;
+    }
+    #fname:focus, #lname:focus, #cemail:focus {
+        border-width: 10px;
+    }
+    
+    #submit-contact {
+        width: 400px;
+        height: 125px;
+        font-size: 35px;
+        font-family: "Poppins";
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+
 }

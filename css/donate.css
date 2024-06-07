@@ -1,35 +1,48 @@
 #landing {
     width: 100%;
     background: var(--darkblue);
-    height: 800px;
-    padding-top: 50px;
+    height: 700px;
+    padding-top: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#givelines {
+    position: absolute;
+    z-index: 0;
+    transform: rotate(0deg);
+    margin-top: 400px;
 }
 #landing-center {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 600px;
+    width: 700px;
     margin-top: -50px;
     margin-left: 50px;
     margin-right: 50px;
 }
 .person {
     width: 250px;
+    position: relative;
+    z-index: 1;
 }
 #person-left {
     width: 230px;
 }
 #landing-header {
     color: var(--main);
+    font-size: 65px;
+    position: relative;
+    z-index: 1;
 }
 #landing-text {
     margin-top: -20px;
     color: whitesmoke;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 #landing-donate {
     background: var(--orange);
@@ -56,4 +69,40 @@
 
 #landing-subheader {
     color: var(--link);
+}
+
+#contact {
+    margin-top: 150px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    #givelines {
+        margin-top: 700px;
+        width: 100%;
+        height: 700px;
+    }
+
+    #landing {
+        padding-top:400px;
+        padding-bottom: 300px;
+    }
+    #landing-header {
+        font-size: 90px;
+    }
+    .person {
+        display: none;
+    }
+
+    #landing-donate {
+        width: 400px;
+        height: 125px;
+        font-size: 35px;
+        font-family: "Poppins";
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+
+
 }

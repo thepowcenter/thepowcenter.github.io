@@ -7,104 +7,127 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     </head>
     <body>
-
         <div id="menu">
-            <img id="menu-img" src="./images/circlelogo.png">
+            <div id="menucontent">
+                <img id="menu-img" src="./images/circlelogo.png">
+                <button id="menubutton" onclick="openmenu()">></button>
+            </div>
             <div id="menu-tabs">
-                <button class="menu-button" id="menu-home">Home</button>
-                <button class="menu-button" id="menu-about">About</button>
-                <button class="menu-button" id="menu-books">Books</button>
-                <button class="menu-button" id="menu-donate">Donate</button>
-                <button class="menu-button" id="menu-contact">Contact</button>
+                <p class="menu-button" id="menu-home">Home</p>
+                <p class="menu-button" id="menu-about">About</p>
+                <p class="menu-button" id="menu-books">Books</p>
+                <p class="menu-button" id="menu-donate">Donate</p>
+                <p class="menu-button" id="menu-contact">Contact</p>
             </div>
         </div>
 
-        <div id="landing">
-            <img id="landing-triangle" src="./images/landingtriangle.png" data-aos="slide-down">
-            <img id="landing-title" src="./images/circlelogo.png" data-aos="zoom-in" data-aos-delay="300">
-            <p id="landing-subheader" data-aos="fade-down" data-aos-delay="300">Discover the <span style="color: var(--orange)">Pow</span>er of Words:<br>God's and Yours</p>
-            <img id="landing-img" src="./images/landing-demo.png">
-        </div>
 
-        <div id="about">
-            <div id="about-graphics">
-                <img data-aos="fade-up-right" id="about-img" src="./images/kenjibed.jpg">
-                <img data-aos="fade-up-right" data-aos-delay="100" id="graphic-square" src="./images/square.png">
+            <div id="landing">
+                <img id="landing-triangle" src="./images/landingtriangle.png" data-aos="slide-down">
+                <img id="landing-title" src="./images/circlelogo.png" data-aos="zoom-in" data-aos-delay="300">
+                <p id="landing-subheader" data-aos="fade-down" data-aos-delay="300">Discover the <span style="color: var(--orange)">Pow</span>er of Words:<br>God's and Yours</p>
+                <img id="landing-img" src="./images/landing-demo.png">
             </div>
-            <div id="about-content">
-                <p class="section-subheader" id="about-subheader">Our Mission:</p>
-                <p class="section-header" id="about-header">The Power of Words</p>
-                <p class="section-text" id="about-text">
-                    When our children were babies, we couldn’t wait for them to speak their first words. Hearing them say “Da-da” or “bye-bye” was proof that they were growing up. Today, the everyday words our kids speak reveal their maturity and impact their lives in big ways. 
-
-                    At The POW Center, we help kids understand the importance of their words through creative, faith-building materials and show them how to use their words the way God intended—to produce positive, productive results!</p>
-            </div>
-        </div>
-
-        <div id="books">
-            <img class="bluewave" id="bw1" src="./images/bluewave.png">
-            <div id="books-content">
-                <img id="books-image" src="./images/theflowerdisaster.png" data-aos="zoom-in">
-                <div id="books-right">
-                    <p class="section-subheader" id="books-subheader">Our Newest Book!</p>
-                    <p class="section-header" id="books-header">The Flower Disaster</p>
-                    <p class="section-text" id="books-text">
-                        The Flower Disaster is a delightful realistic fiction story specially crafted for children aged 6-10. Packed with humor and quick action, this character-growing story brings Bible truths to life, making them relatable and applicable for the younger generation.
-                        <br><br>
-                       Join the exciting journey of our lovable POW characters and learn valuable life lessons of getting along with siblings, listening for God’s voice, and holding onto faith no matter WHAT happens!
-                    
-                    </p>
+    
+            <div id="about">
+                <div id="about-graphics">
+                    <img data-aos="fade-up-right" id="about-img" src="./images/kenjibed.jpg">
+                    <img data-aos="fade-up-right" data-aos-delay="100" id="graphic-square" src="./images/square.png">
+                </div>
+                <div id="about-content">
+                    <p class="section-subheader" id="about-subheader">Our Mission:</p>
+                    <p class="section-header" id="about-header">The Power of Words</p>
+                    <p class="section-text" id="about-text">
+                        When our children were babies, we couldn’t wait for them to speak their first words. Hearing them say “Da-da” or “bye-bye” was proof that they were growing up. Today, the everyday words our kids speak reveal their maturity and impact their lives in big ways. 
+    
+                        At The POW Center, we help kids understand the importance of their words through creative, faith-building materials and show them how to use their words the way God intended—to produce positive, productive results!</p>
                 </div>
             </div>
-            <a href="https://www.amazon.com/Flower-Disaster-Character-Faith-Building-Chapter/dp/B0CCZSXD21" target="_blank" id="books-buy">Buy Now</a>
-            <a data-aos-delay="200" href="./books.html" id="books-link">See All Books <span id="arrow" style="margin-left: 5px"></span>></a>
-        </div>
+    
+            <div id="books">
+                <img class="bluewave" id="bw1" src="./images/bluewave.png">
+                <div id="books-content">
+                    <img id="books-image" src="./images/theflowerdisaster.png" data-aos="zoom-in">
+                    <div id="books-right">
+                        <p class="section-subheader" id="books-subheader">Our Newest Book!</p>
+                        <p class="section-header" id="books-header">The Flower Disaster</p>
+                        <p class="section-text" id="books-text">
+                            The Flower Disaster is a delightful realistic fiction story specially crafted for children aged 6-10. Packed with humor and quick action, this character-growing story brings Bible truths to life, making them relatable and applicable for the younger generation.
+                            <br><br>
+                           Join the exciting journey of our lovable POW characters and learn valuable life lessons of getting along with siblings, listening for God’s voice, and holding onto faith no matter WHAT happens!
+                        
+                        </p>
+                    </div>
+                </div>
+                <a href="https://www.amazon.com/Flower-Disaster-Character-Faith-Building-Chapter/dp/B0CCZSXD21" target="_blank" id="books-buy">Buy Now</a>
+                <a data-aos-delay="200" href="./books.html" id="books-link">See All Books <span id="arrow" style="margin-left: 5px"></span>></a>
+            </div>
+    
+            <div id="sample">
+                <p class="section-header" id="sample-header">Get Your Free Sample of The Flower Disaster!</p>
+                <p class="section-subheader" id="sample-subheader">Sign up to be notified of new releases here!</p>
+                <form method="POST" id="sample-form" action="https://script.google.com/macros/s/AKfycbz6qzjULokPkzXrPwNay7henYrtulO8C2uNSHepcU3aFb0HX1Z_49X5rnr7Kh4-GqQ/exec">
+                    <div id="sample-names">
+                        <input name="First Name" id="fname-sample" type="text" placeholder="First Name" required>
+                        <input name="Last Name" id="lname-sample" type="text" placeholder="Last Name" required><br>
+                    </div>
+                    <input name="Email" id="cemail-sample" type="email" placeholder="Email" required>
+                    <div id="sample-finish">
+                        <button type="submit" id="submit-sample">Get Your Free Sample</button>
+                        <p id="loading1">C</p>
+                    </div>
+                </form>
+                <img class="bluewave" id="bw2" src="./images/bluewave.png">
+            
+            </div>
+     
+            <div id="youtube">
+                <p class="section-header" id="yt-header">Check Out Our <span style="color: var(--yt)">YouTube</span> Channel!</p>
+                <div id="yt-videos">
+                    <div id="yt-vid" data-aos="fade-up-right">
+                        <img id="yt-thumbnail" src="./images/yt1.webp">
+                        <p id="yt-vid-title">Body, Soul, and Spirit</p>
+                        <p id="yt-vid-subtitle">Object Lesson for Kids</p>
+                    </div>
+                    <div id="yt-vid" data-aos="fade-up">
+                        <img id="yt-thumbnail" src="./images/yt2.webp">
+                        <p id="yt-vid-title">Body, Soul, and Spirit Song</p>
+                        <p id="yt-vid-subtitle">Teaching Song for Kids</p>
+                    </div>
+                    <div id="yt-vid" data-aos="fade-up-left">
+                        <img id="yt-thumbnail" src="./images/yt3.webp">
+                        <p id="yt-vid-title">What is Your Soul?</p>
+                        <p id="yt-vid-subtitle">Body, Soul, and Spirit</p>
+                    </div>
+                </div>
+                <a href="https://www.youtube.com/@POWAcademy/videos" target="_blank" id="yt-channel">View Our Channel</a>
+            </div>
 
-        <div id="sample">
-            <p class="section-subheader" id="books-subheader">Get your free sample of the flower disaster (this part is unfinished because I still have to figure out mailing)</p>
-            <!--Add like the characters around the form filling out thing like have them surrounding it-->
-            <img class="bluewave" id="bw2" src="./images/bluewave.png">
         
-        </div>
- 
-        <div id="youtube">
-            <p class="section-header" id="yt-header">Check Out Our <span style="color: var(--yt)">YouTube</span> Channel!</p>
-            <div id="yt-videos">
-                <div id="yt-vid" data-aos="fade-up-right">
-                    <img id="yt-thumbnail" src="./images/yt1.webp">
-                    <p id="yt-vid-title">Body, Soul, and Spirit</p>
-                    <p id="yt-vid-subtitle">Object Lesson for Kids</p>
-                </div>
-                <div id="yt-vid" data-aos="fade-up">
-                    <img id="yt-thumbnail" src="./images/yt2.webp">
-                    <p id="yt-vid-title">Body, Soul, and Spirit Song</p>
-                    <p id="yt-vid-subtitle">Teaching Song for Kids</p>
-                </div>
-                <div id="yt-vid" data-aos="fade-up-left">
-                    <img id="yt-thumbnail" src="./images/yt3.webp">
-                    <p id="yt-vid-title">What is Your Soul?</p>
-                    <p id="yt-vid-subtitle">Body, Soul, and Spirit</p>
-                </div>
-            </div>
-            <a href="https://www.youtube.com/@POWAcademy/videos" target="_blank" id="yt-channel">View Our Channel</a>
-        </div>
-
 
         <div id="contact">
             <div id="contact-content">
                 <div id="contact-left">
-                    <img id="contact-img" src="https://cdn.discordapp.com/attachments/748917342733598882/1222706855881605121/image.png?ex=6617317f&is=6604bc7f&hm=ea78c2ea9f72d9bfd42ca52616a62e901d827633ddb3e71b9c01af585c880ef4&">
+                    <img id="contact-img" src="./images/powlogo.png">
+                    <p id="contact-text2" class="section-text">The POW Center, Inc. is a 501(c)3 nonprofit organization dedicated to teaching kids the power of words! | All donations are tax-deductible.</p>
                 </div>
                 <div id="contact-right">
-                    <p class="section-subheader" id="contact-subheader2">Stay Connected With POW!</p>
-                    <p class="section-text" id="contact-text">Sign Up to Be Notified of New Releases Here</p>
-                    <input type="text" id="fname" placeholder="First Name" name="fname"><br>
-                    <input type="text" id="lname" placeholder="Last Name" name="lname"><br>
-                    <input type="email" id="cemail" placeholder="Email" name="cemail"><br>
-                    <input type="submit" value="Submit">
+                    <p class="section-subheader" id="contact-subheader2">Stay Connected With POW</p>
+                    <p class="section-text" id="contact-text">Sign up to be notified of new releases here!</p>
+                    
+                    <form method="POST" id="contact-form" action="https://script.google.com/macros/s/AKfycbx1_rkNoSa5I4Tr9k-mZPFpCOcIluw-cCfqgntUGpQepV4IX6d8mP0CWQlDVfhAI2qK/exec">
+                        <div>
+                            <input name="First Name" id="fname" type="text" placeholder="First Name" required>
+                            <input name="Last Name" id="lname" type="text" placeholder="Last Name" required><br>
+                        </div>
+                        <input name="Email" id="cemail" type="email" placeholder="Email" required>
+                        <div id="sample-finish2">
+                            <button type="submit" id="submit-contact">Let's Connect!</button>
+                            <p id="loading2">C</p>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <p id="contact-text" class="section-text">The POW Center, Inc. is a 501(c)3 nonprofit organization dedicated to teaching kids the power of words! | All donations are tax-deductible.</p>
         </div>
 
     </body>

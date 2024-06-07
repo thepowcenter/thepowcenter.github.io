@@ -21,3 +21,27 @@ if (localStorage.getItem("toAbout") == "going") {
   scrollTo({top: document.getElementById("about").offsetTop - offset, behavior: "smooth"});
   localStorage.removeItem("toAbout");
 }
+
+window.addEventListener("load", function() {
+  const form = document.getElementById('sample-form');
+  form.addEventListener("submit", function(e) {
+    document.getElementById("loading1").style="color: white";
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      document.getElementById("submit-sample").innerHTML = "Submitted!";
+      document.getElementById("submit-sample").style="background: mediumspringgreen; pointer-events: none;";
+      document.getElementById("fname-sample").style="pointer-events: none";
+      document.getElementById("lname-sample").style="pointer-events: none";
+      document.getElementById("cemail-sample").style="pointer-events: none";
+      document.getElementById("loading1").style="color: transparent";
+
+    })
+  });
+});
+

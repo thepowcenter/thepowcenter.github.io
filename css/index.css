@@ -1,7 +1,10 @@
+
+
 #landing {
     width: 100%;
     background: linear-gradient(rgb(255, 89, 0), rgba(255, 255, 255, 1));
     height: 800px;
+    margin-top: 70px;
     padding-top: 0px;
     display: flex;
     justify-content: center;
@@ -33,6 +36,7 @@
     position: absolute;
     z-index: 0;
     top: -100px;
+    width: 140%;
 }
 
 
@@ -86,8 +90,9 @@
 
 .bluewave {
     position: absolute;
-    margin-top: -550px;
+    margin-top: -625px;
     z-index: 0;
+    width: 102%;
 }
 
 #books {
@@ -170,14 +175,96 @@
 }
 
 #sample {
-    margin-top: -25px;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 600px;
     background: var(--darkblue);
 }
+
+#sample-header {
+    color: white;
+    border-top: 2px solid rgb(54, 98, 194);
+    width: 70%;
+    text-align: center;
+    padding-top: 100px;
+    position: relative;
+    z-index: 1;
+}
+#sample-subheader {
+    color: var(--orange);
+    margin-top: -30px;
+    position: relative;
+    z-index: 1;
+}
+
+#sample-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#fname-sample, #lname-sample, #cemail-sample {
+    font-size: 15px;
+    width: 233px;
+    background: white;
+    color: var(--darkblue);
+    border: 4px solid rgb(223, 234, 255);
+    font-family: "Poppins";
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    transition: 0.15s;
+}
+#cemail-sample {
+    width: 500px;
+    margin-top: 0px;
+}
+
+#fname-sample:focus, #lname-sample:focus, #cemail-sample:focus {
+    border: 4px solid var(--orange);
+}
+
+#submit-sample {
+    font-family: "Poppins";
+    background: var(--orange);
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+    border: none;
+    margin-top: 15px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+    transition: 0.2s;
+}
+#submit-sample:hover {
+    background: var(--secondary);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
 #bw2 {
     transform: rotate(180deg);
-    margin-top: 100px;
-    margin-left: -10px;
+    margin-top: 500px;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    pointer-events: none;
 }
 
 #youtube {
@@ -234,7 +321,7 @@
     font-size: 20px;
     height: 60px;
     display: flex;
-    justify-content: ceter;
+    justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
@@ -248,3 +335,205 @@
     background: var(--secondary);
     transform: scale(1.1);
 }
+
+@media only screen and (max-width: 1024px) {
+    #landing {
+        margin-top: 140px;
+        margin-bottom: 10vh;
+        padding-bottom: 450px;
+        border-bottom: 15px solid var(--orange);
+        background: white;
+    }
+
+    #landing-triangle {
+        display: none;
+    }
+
+    #landing-title {
+        margin-top: 500px;
+        width: 300px;
+        height: auto;
+    }
+
+    #landing-subheader {
+        font-size: 60px;
+    }
+
+    #landing-img {
+        margin-top: 50px;
+        width: 90%;
+    }
+
+    #about {
+        flex-direction: column;
+        margin-top: 150px;
+        margin-bottom: 550px;
+    }
+    #about-graphics {
+        margin: 0;
+        padding: 0;
+        width: 90%;
+    }
+    #about-content {
+        margin-top: 35px;
+        width: 90%;
+        padding: 0;
+    }
+    #about-img {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    #graphic-square {
+        display: none;
+    }
+    #about-header {
+        margin-top: -35px;
+    }
+    #about-text {
+        width: 90%;
+    }
+    .bluewave {
+        display: none;
+    }
+
+    #books {
+        height: 2500px;
+        padding-top: 300px;
+        padding-bottom: 300px;
+        flex-direction: column;
+    }
+    #books-content {
+        flex-direction: column;
+        margin: 0;
+    }
+    #books-image {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+    }
+    #books-right {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #books-text {
+        height: 100%;
+        width: 90%;
+    }
+    #books-buy {
+        margin: 0;
+        font-size: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 70px;
+        padding-right: 70px;
+        margin-left: -400px;
+    }
+    #books-link {
+        margin: 0;
+        font-size: 40px;
+        margin-top: 30px;
+        margin-left: -460px;
+    }
+    #sample {
+        margin-top: -250px;
+        height: 1000px;
+        padding-top: 300px;
+        padding-bottom: 300px;
+    }
+    #sample-header {
+        line-height: 80px;
+        padding-top: 150px;
+        width: 90%;
+    }
+    #sample-subheader {
+        width: 90%;
+        text-align: center;
+    }
+
+    #contact-text {
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+    #fname-sample, #lname-sample, #cemail-sample {
+        width: 550px;
+        height: 100px;
+        border-width: 10px;
+        font-size: 35px;
+        padding-left: 35px;
+        margin-bottom: 20px;
+    }
+    #cemail-sample {
+        margin-top: -25px;
+    }
+    #fname-sample:focus, #lname-sample:focus, #cemail-sample:focus {
+        border-width: 10px;
+    }
+    #sample-names {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #submit-sample {
+        width: 600px;
+        height: 125px;
+        font-size: 35px;
+        font-family: "Poppins";
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+
+
+    #yt-header {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        line-height: 70px;
+    }
+
+    #yt-videos {
+        flex-direction: column;
+        width: 90%;
+    }
+    #yt-vid {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #yt-thumbnail {
+        width: 90%;
+    }
+    #yt-vid-title {
+        font-size: 50px;
+        margin-top: 10px;
+    }
+    #yt-vid-subtitle {
+        font-size: 35px;
+        margin-top: -50px;
+    }
+    #yt-channel {
+        width: 400px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        font-size: 35px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+
+}
+
+
+
+
+
+
+

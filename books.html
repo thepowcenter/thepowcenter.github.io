@@ -3,7 +3,7 @@
     <head>
         <title>The Pow Center - Home</title>
         <link rel="stylesheet" href="css/universal.css">
-        <link rel="stylesheet" href="css/donate.css">
+        <link rel="stylesheet" href="css/books.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     </head>
     <body>
@@ -22,17 +22,36 @@
             </div>
         </div>
 
-        <div id="landing">
-            <img id="givelines" src="./images/givelines.png">
-            <img class="person" id="person-left" src="./images/chef.png">
-            <div id="landing-center">
-                <p class="section-header" id="landing-header">Give Here!</p>
-                <p class="section-text" id="landing-text">The POW Center is able to produce faith-building materials and media productions for kids ages 5-10 through the generous donations of our POW partners and friends.</p>
-                <a href="https://thepowcenter.churchcenter.com/giving" target="_blank" id="landing-donate">Donate Now</a>
-                <p class="section-subheader" id="landing-subheader">Thank You!</p>
+
+        <div id="books">
+            <div id="books-content">
+                <img id="books-image" src="./images/theflowerdisaster.png" data-aos="zoom-in">
+                <div id="books-right">
+                    <p class="section-subheader" id="books-subheader">Our Newest Book!</p>
+                    <p class="section-header" id="books-header">The Flower Disaster</p>
+                    <p class="section-text" id="books-text">
+                        The Flower Disaster is a delightful realistic fiction story specially crafted for children aged 6-10. Packed with humor and quick action, this character-growing story brings Bible truths to life, making them relatable and applicable for the younger generation.
+                        <br><br>
+                       Join the exciting journey of our lovable POW characters and learn valuable life lessons of getting along with siblings, listening for God’s voice, and holding onto faith no matter WHAT happens!
+                    
+                    </p>
+                </div>
             </div>
-            <img class="person" id="person-right" src="./images/detectivedivine.png">
+            <a href="https://www.amazon.com/Flower-Disaster-Character-Faith-Building-Chapter/dp/B0CCZSXD21" target="_blank" id="books-buy">Buy Now</a>
+    
         </div>
+
+        <p class="section-header" id="all-header">All Books</p>
+        <div id="all-content">
+            <div id="all-row-1">
+                <div id="flowerdisaster" onclick="flowerdisaster()">
+                    <img id="flowerdisaster-image" src="./images/theflowerdisaster.png">
+                    <p class="section-subheader" id="flowerdisaster-subheader">The Flower Disaster</p>
+                    <p class="section-text" id="flowerdisaster-author">Kim Ramos</p>
+                </div>
+            </div>
+        </div>
+
 
         <div id="contact">
             <div id="contact-content">
@@ -62,6 +81,6 @@
     </body>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="./js/donate.js"></script>
+    <script src="./js/books.js"></script>
     <script src="./js/universal.js"></script>
 </html>
