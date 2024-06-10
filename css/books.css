@@ -124,6 +124,10 @@
     margin-top: -25px;
 }
 
+#nothing {
+    color: gray;
+}
+
 @media only screen and (max-width: 1024px) {
     #books {
         height: 2500px;
