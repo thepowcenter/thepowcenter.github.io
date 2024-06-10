@@ -90,42 +90,50 @@
 }
 
 #all-content {
-    width: 1000px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-bottom: 100px;
 }
-
-#flowerdisaster {
+#all-row-1 {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+.book {
+    display: flex;
     align-items: center;
     flex-direction: column;
     transition: 0.2s;
+    height: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-#flowerdisaster:hover {
+.book:hover {
     transform: scale(1.05);
     cursor: pointer;
 }
 
-#flowerdisaster-image {
-    width: 200px;
+.book-cover {
+    height: 300px;
+    width: auto;
 }
 
-#flowerdisaster-subheader {
+#book-subheader {
     color: var(--darkblue);
     margin-top: 10px;
+    text-align: center;
 }
-#flowerdisaster-author {
+#book-author {
     margin-top: -25px;
 }
 
 #nothing {
     color: gray;
+    display: none;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -168,9 +176,27 @@
         width: 90%;
         padding-bottom: 50px;
     }
-
-    #flowerdisaster-image {
+    #all-content {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        width: 100%;
+    }
+    #all-row-1 {
+        flex-direction: column;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .book {
+        height: 850px;
+        width: 70%;
+    }
+    .book-cover {
         width: 50%;
+        height: auto;
     }
     #nothing {
         width: 90%;
