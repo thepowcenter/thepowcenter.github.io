@@ -45,3 +45,13 @@ window.addEventListener("load", function() {
   });
 });
 
+function yt1() {
+  window.open('https://www.youtube.com/watch?v=gZx6U8xdWxw', '_blank');
+}
+function yt2() {
+  window.open('https://www.youtube.com/watch?v=srX9DaNXyws', '_blank');
+}
+function yt3() {
+  window.open('https://www.youtube.com/watch?v=jngVPaon3vY', '_blank');
+}
+
